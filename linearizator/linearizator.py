@@ -4,7 +4,7 @@ from __future__ import division
 
 class linearizator:
 
-    def __init__(self, x1=None, y1=None, x2=None, y2=None, unknown="y", equation=None):
+    def __init__(self, x1=None, y1=None, x2=None, y2=None, unknown=None, equation=None):
         self.__x1 = x1
         self.__y1 = y1
         self.__x2 = x2
@@ -61,6 +61,10 @@ class linearizator:
     def unknown(self, value):
         if(value == "x" or value == "y"):
             self.__unknown = value
+            if value == "x":
+                self.__known = "y"
+            if value == "y":
+                self.__known = "x"
         else:
             print("Allowed values x and y")
 
