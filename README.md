@@ -1,5 +1,7 @@
 # Linearizator
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/442feb0ba62c44c7900e33e773cde6f8)](https://www.codacy.com/app/RDCH106/linearizator?utm_source=github.com&utm_medium=referral&utm_content=RDCH106/linearizator&utm_campaign=badger)
+
 Small library to solve linearization problems.
 
 Linearizator is compatible with Python 2 and Python 3.
