@@ -9,7 +9,7 @@ Linearizator is compatible with Python 2 and Python 3.
 - Solve equation of line using 2 points
 - Use solved equation to linearize values
 
-### Instalation
+### Installation
 
 You can install or upgrade linearizator with:
 
