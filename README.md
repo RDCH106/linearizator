@@ -30,7 +30,7 @@ $ python setup.py install
 
 ### Quick example
 
-```
+```python
 from linearizator import linearizator
 
 # Initialize linearizator object
