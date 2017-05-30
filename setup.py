@@ -12,7 +12,7 @@ setup(
     author = metadata.get_author(),
     author_email = 'contact@rdch106.hol.es',
     url = 'https://github.com/RDCH106/linearizator',
-    download_url = 'https://github.com/RDCH106/linearizator/archive/v0.0.15.tar.gz',
+    download_url = 'https://github.com/RDCH106/linearizator/archive/v'+metadata.get_version()+'.tar.gz',
     keywords = ['math', 'linearization'],
     classifiers = [],
 )
