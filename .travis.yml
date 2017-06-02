@@ -8,7 +8,7 @@ python:
   - "nightly" # currently points to 3.7-dev
 # command to install dependencies
 install:
-    - "pip install pytest"
+    - "pip install pytest --upgrade"
 # command to run tests
 script:
     - "pwd"
