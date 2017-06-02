@@ -19,7 +19,7 @@ Linearizator is compatible with Python 2 and Python 3.
 
 You can install or upgrade linearizator with:
 
-`$ pip install python-telegram-bot --upgrade`
+`$ pip install linearizator --upgrade`
 
 Or you can install from source with:
 
