@@ -4,7 +4,7 @@ from . import linearizator
 
 class Metadata:
     def __init__(self):
-        self.__version__ = '0.0.17'
+        self.__version__ = '0.1.0'
         self.__author__ = 'Rubén de Celis Hernández'
 
     def get_version(self):
