@@ -70,7 +70,8 @@ class Linearizator(object):
             print("Allowed values x and y")
 
     @equation.setter
-    def equation(self, mvalue, cvalue):
+    def equation(self, equation):
+        mvalue, cvalue = equation
         self.__equation = (mvalue, cvalue)
 
     def linearize(self):
