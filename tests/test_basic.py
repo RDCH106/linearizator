@@ -34,6 +34,12 @@ class TestClass(unittest.TestCase):
         y2 = 17
         self.linearizator.y2 = y2
         self.assertEqual(y2, self.linearizator.y2)
+        unknown = "x"
+        self.linearizator.unknown = unknown
+        self.assertEqual(unknown, self.linearizator.unknown)
+        equation = (-0.5, 2)
+        self.linearizator.equation = equation
+        self.assertEqual(equation, self.linearizator.equation)
 
 
 class TestClassMethods(unittest.TestCase):
