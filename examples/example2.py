@@ -2,7 +2,7 @@
 
 from linearizator import linearizator
 
-lin = linearizator.linearizator()
+lin = linearizator.Linearizator()
 lin.x1 = 8
 lin.y1 = 30
 lin.x2 = 17

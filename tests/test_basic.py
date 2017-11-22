@@ -10,10 +10,10 @@ from linearizator import linearizator
 class TestClass(unittest.TestCase):
 
     def setUp(self):
-        self.linearizator = linearizator.linearizator(x1=6.4, y1=20, x2=16.8, y2=85, unknown="y")
+        self.linearizator = linearizator.Linearizator(x1=6.4, y1=20, x2=16.8, y2=85, unknown="y")
 
     def test_constructor(self):
-        self.assertIsInstance(self.linearizator, linearizator.linearizator, "Object is not an instance of linearizator")
+        self.assertIsInstance(self.linearizator, linearizator.Linearizator, "Object is not an instance of linearizator")
         self.assertEqual(6.4, self.linearizator.x1)
         self.assertEqual(20, self.linearizator.y1)
         self.assertEqual(16.8, self.linearizator.x2)
@@ -21,7 +21,7 @@ class TestClass(unittest.TestCase):
         self.assertEqual("y", self.linearizator.unknown)
         self.assertIsNone(self.linearizator.equation)
 
-    def test_getters(self):
+    def test_getters_and_setters(self):
         x1 = 8
         self.linearizator.x1 = x1
         self.assertEqual(x1, self.linearizator.x1)
@@ -38,7 +38,7 @@ class TestClass(unittest.TestCase):
 
 class TestClassMethods(unittest.TestCase):
     def setUp(self):
-            self.linearizator = linearizator.linearizator(x1=6.4, y1=20, x2=16.8, y2=85, unknown="y")
+            self.linearizator = linearizator.Linearizator(x1=6.4, y1=20, x2=16.8, y2=85, unknown="y")
 
     def test_linearize(self):
         self.linearizator.linearize()

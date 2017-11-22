@@ -2,7 +2,8 @@
 
 from __future__ import division
 
-class linearizator:
+
+class Linearizator(object):
 
     def __init__(self, x1=None, y1=None, x2=None, y2=None, unknown=None, equation=None):
         self.__x1 = x1

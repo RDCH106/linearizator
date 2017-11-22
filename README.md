@@ -35,7 +35,7 @@ $ python setup.py install
 from linearizator import linearizator
 
 # Initialize linearizator object
-lin = linearizator.linearizator(x1=6.4, y1=20, x2=16.8, y2=85, unknown="y")
+lin = linearizator.Linearizator(x1=6.4, y1=20, x2=16.8, y2=85, unknown="y")
 
 # Linearize
 lin.linearize()
